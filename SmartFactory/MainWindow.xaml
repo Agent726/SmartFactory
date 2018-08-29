@@ -1,0 +1,20 @@
+﻿<Window x:Class="SmartFactory.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SmartFactory"
+        mc:Ignorable="d"
+        Title="SmartFactory" Height="350" Width="525"
+        MaxHeight="110px" MaxWidth="300px" MinHeight="110px" MinWidth="300px" MouseMove="Mouse_moveHandler">
+
+    <Canvas>
+        <TextBlock Text="用户名：" Canvas.Left="12px" Canvas.Top="12px"/>
+        <TextBox Height="23px" Width="200px" BorderBrush="Black" Canvas.Left="66px" Canvas.Top="9px"/>
+        <TextBlock Text="密码：" Canvas.Left="12px" Canvas.Top="40.72px" Height="16px" Width="36px"/>
+        <TextBox Height="23px" Width="200px" BorderBrush="Black" Canvas.Left="66px" Canvas.Top="38px"/>
+        <Button Content="登录" Width="80px" Height="23px" Canvas.Left="66" Canvas.Top="67px"/>
+        <Button Content="退出" Width="80px" Height="23px" Canvas.Left="186" Canvas.Top="67px" Click="Close_clickHandler"/>
+    </Canvas>
+
+</Window>
